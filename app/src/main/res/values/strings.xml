@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Agata Kristi hikoyalari</string>
+    <string name="agata">Agata Kristi asarlari\naudio shaklda</string>
+    <string name="song_name">SONG NAME</string>
+    <string name="_100_songs">100 Songs</string>
+    <string name="playlist_title">Playlist Title</string>
+    <string name="not_chan_name">Music Channel</string>
+    <string name="not_chan_des">Shows the currently playing music</string>
+    <string name="notification_Channel_name">Notification Channel</string>
+    <string name="notification_Channel_Description">This is Description</string>
+    <string name="st">Hikoyalar</string>
+    <string name="ag">Agata Kristi hikoyalari</string>
+    <string name="rate">Baholash</string>
+    <string name="other">Boshqa ilovalar</string>
+    <string name="com">Aloqa</string>
+    <string name="prog">Dasturchi</string>
+    <string name="aud">Audio Kitob Javoni</string>
+    <string name="share">Ulashish</string>
+    <string name="about">Ilova haqida</string>
+    <string name="about_app">Ilova Ingliz detektiv yozuvchisi Agata Kristi asarlarining auido jamlanmasi. Ilovadagi barcha hikoyalar Audio Kitob Javoni telegram kanalidan olingan.
+    Menyudan ushbu kanalga tashrif buyurishingiz mumkin.\n\nIlovadagi reklamalar ilova sizga sifatli va bepul holatda yetib kelishini ta`minlaydi!</string>
+    <string name="about_app_two">Ilova haqida</string>
+    <string name="ok">OK</string>
+</resources>

@@ -21,4 +21,7 @@
     Menyudan ushbu kanalga tashrif buyurishingiz mumkin.\n\nIlovadagi reklamalar ilova sizga sifatli va bepul holatda yetib kelishini ta`minlaydi!</string>
     <string name="about_app_two">Ilova haqida</string>
     <string name="ok">OK</string>
+    <string name="no_internet">Internet aloqasini tekshiring!</string>
+    <string name="retry">Qayta</string>
+    <string name="error">Xatolik yuz berdi</string>
 </resources>

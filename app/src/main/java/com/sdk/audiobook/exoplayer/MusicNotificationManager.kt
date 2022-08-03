@@ -37,13 +37,13 @@ class MusicNotificationManager(
         ).apply {
             setSmallIcon(R.drawable.ic_image)
             setMediaSessionToken(sessionToken)
-            setColorized(true)
-            setColor(R.color.purple_middle)
         }
     }
 
-    fun showNotification(player: Player) {
-        notificationManager.setPlayer(player)
+    fun showNotification(player: Player?) {
+        if (player != null) {
+            notificationManager.setPlayer(player)
+        }
     }
 
     private inner class DescriptionAdapter(

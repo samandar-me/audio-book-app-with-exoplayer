@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.sdk.audiobook" >
+    package="com.sdk.audiobook">
 
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
 
@@ -16,28 +17,40 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AudioBook"
-        tools:targetApi="31" >
+        tools:targetApi="31">
         <activity
-            android:name=".activity.main.MainActivity"
-            android:screenOrientation="portrait"
+            android:name=".activity.no_internet.NoInternetActivity"
             android:exported="false" />
         <activity
+            android:name=".activity.main.MainActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
             android:name=".activity.IntroActivity"
+            android:exported="true"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.Splash"
-            android:exported="true" >
+            android:theme="@style/AppTheme.Splash">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <service android:name=".exoplayer.MusicService"
-            android:exported="true">
+
+        <service
+            android:name=".exoplayer.MusicService"
+            android:exported="false">
             <intent-filter>
                 <action android:name="android.media.browse.MediaBrowserService" />
             </intent-filter>
         </service>
+        <receiver
+            android:name=".manager.CheckBroadcastManager"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="anroid.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
     </application>
 
 </manifest>

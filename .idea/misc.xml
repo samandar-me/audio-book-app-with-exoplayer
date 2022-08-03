@@ -14,10 +14,14 @@
         <entry key="..\:/AndroidProjects/MVVMArch/AudioBook/app/src/main/res/drawable/ic_baseline_skip_previous_24.xml" value="0.2935" />
         <entry key="..\:/AndroidProjects/MVVMArch/AudioBook/app/src/main/res/drawable/ic_image.xml" value="0.176" />
         <entry key="..\:/AndroidProjects/MVVMArch/AudioBook/app/src/main/res/drawable/ic_pause_white.xml" value="0.291" />
+        <entry key="..\:/AndroidProjects/MVVMArch/AudioBook/app/src/main/res/drawable/ic_play_arrow.xml" value="0.2835" />
+        <entry key="..\:/AndroidProjects/MVVMArch/AudioBook/app/src/main/res/drawable/ic_play_circle.xml" value="0.2835" />
         <entry key="..\:/AndroidProjects/MVVMArch/AudioBook/app/src/main/res/drawable/ic_play_white.xml" value="0.291" />
+        <entry key="..\:/AndroidProjects/MVVMArch/AudioBook/app/src/main/res/drawable/view_back.xml" value="0.2835" />
         <entry key="..\:/AndroidProjects/MVVMArch/AudioBook/app/src/main/res/layout/about_layout.xml" value="0.2863247863247863" />
         <entry key="..\:/AndroidProjects/MVVMArch/AudioBook/app/src/main/res/layout/activity_intro.xml" value="0.2863247863247863" />
         <entry key="..\:/AndroidProjects/MVVMArch/AudioBook/app/src/main/res/layout/activity_main.xml" value="0.2863247863247863" />
+        <entry key="..\:/AndroidProjects/MVVMArch/AudioBook/app/src/main/res/layout/activity_no_internet.xml" value="0.2863247863247863" />
         <entry key="..\:/AndroidProjects/MVVMArch/AudioBook/app/src/main/res/layout/fragment_home.xml" value="0.2863247863247863" />
         <entry key="..\:/AndroidProjects/MVVMArch/AudioBook/app/src/main/res/layout/fragment_song.xml" value="0.2863247863247863" />
         <entry key="..\:/AndroidProjects/MVVMArch/AudioBook/app/src/main/res/layout/list_item.xml" value="0.2863247863247863" />

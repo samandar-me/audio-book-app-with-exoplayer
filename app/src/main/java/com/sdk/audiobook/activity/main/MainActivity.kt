@@ -2,6 +2,7 @@ package com.sdk.audiobook.activity.main
 
 import android.os.Bundle
 import android.support.v4.media.session.PlaybackStateCompat
+import android.util.Log
 import android.view.Gravity
 import android.view.LayoutInflater
 import android.view.MenuItem
@@ -144,7 +145,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         mainViewModel.playbackState.observe(this) {
             playbackState = it
             binding.ivPlayPause.setImageResource(
-                if (playbackState?.isPlaying == true) R.drawable.ic_pause else R.drawable.ic_play_arrow
+                if (playbackState?.isPlaying == true) R.drawable.ic_pause_white else R.drawable.ic_play_white
             )
         }
         mainViewModel.isConnected.observe(this) {
@@ -152,7 +153,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
                 when (result.status) {
                     Status.ERROR -> Snackbar.make(
                         binding.rootLayout,
-                        result.message ?: "An unknown error occured",
+                        result.message ?: getString(R.string.error),
                         Snackbar.LENGTH_LONG
                     ).show()
                     else -> Unit
@@ -164,7 +165,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
                 when (result.status) {
                     Status.ERROR -> Snackbar.make(
                         binding.rootLayout,
-                        result.message ?: "An unknown error occured",
+                        result.message ?: getString(R.string.error),
                         Snackbar.LENGTH_LONG
                     ).show()
                     else -> Unit

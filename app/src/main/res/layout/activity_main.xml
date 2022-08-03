@@ -5,12 +5,12 @@
     android:id="@+id/drawerLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activity.main.MainActivity"
-    tools:openDrawer="start">
+    tools:context=".activity.main.MainActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/rootLayout"
         android:layout_width="match_parent"
+        android:background="@color/purple_middle"
         android:layout_height="match_parent">
 
         <LinearLayout
@@ -84,7 +84,7 @@
         android:id="@+id/nav_view"
         android:layout_width="300dp"
         android:layout_height="match_parent"
-        android:background="@drawable/background_gradient"
+        android:background="@color/purple_middle"
         android:layout_gravity="start"
         android:fitsSystemWindows="true"
         app:headerLayout="@layout/nav_header_main"

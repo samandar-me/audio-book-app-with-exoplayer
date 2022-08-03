@@ -3,6 +3,7 @@ package com.sdk.audiobook.exoplayer.callbacks
 import android.widget.Toast
 import com.google.android.exoplayer2.ExoPlaybackException
 import com.google.android.exoplayer2.Player
+import com.sdk.audiobook.R
 import com.sdk.audiobook.exoplayer.MusicService
 
 class MusicPlayerEventListener(
@@ -18,6 +19,6 @@ class MusicPlayerEventListener(
 
     override fun onPlayerError(error: ExoPlaybackException) {
         super.onPlayerError(error)
-        Toast.makeText(musicService, "An unknown error occured", Toast.LENGTH_LONG).show()
+        Toast.makeText(musicService, musicService.getString(R.string.no_internet), Toast.LENGTH_LONG).show()
     }
 }

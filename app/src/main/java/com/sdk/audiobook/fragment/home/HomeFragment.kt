@@ -13,6 +13,7 @@ import com.sdk.audiobook.activity.main.MainViewModel
 import com.sdk.audiobook.adapters.SongAdapter
 import com.sdk.audiobook.databinding.FragmentHomeBinding
 import com.sdk.audiobook.util.Status
+import com.sdk.audiobook.util.addAdmob
 import dagger.hilt.android.AndroidEntryPoint
 import javax.inject.Inject
 
@@ -38,6 +39,7 @@ class HomeFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         mainViewModel = ViewModelProvider(requireActivity())[MainViewModel::class.java]
+        addAdmob(binding.admob)
         initViews()
     }
 

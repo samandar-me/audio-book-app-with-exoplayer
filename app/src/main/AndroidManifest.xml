@@ -51,6 +51,9 @@
                 <action android:name="anroid.net.conn.CONNECTIVITY_CHANGE" />
             </intent-filter>
         </receiver>
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-2942733085232967~9471392578" />
     </application>
 
 </manifest>

@@ -104,4 +104,6 @@ dependencies {
     api "com.google.android.exoplayer:extension-mediasession:2.11.8"
 
     implementation "com.airbnb.android:lottie:5.0.3"
+
+    implementation 'com.google.android.gms:play-services-ads:21.1.0'
 }

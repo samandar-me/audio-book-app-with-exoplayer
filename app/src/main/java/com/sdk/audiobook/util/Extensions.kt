@@ -4,6 +4,10 @@ import android.content.Context
 import android.content.Intent
 import android.net.Uri
 import android.widget.Toast
+import androidx.fragment.app.Fragment
+import com.google.android.gms.ads.AdRequest
+import com.google.android.gms.ads.AdView
+import com.google.android.gms.ads.MobileAds
 
 
 fun Context.gotoCom(url: String) {
@@ -25,4 +29,9 @@ fun Context.gotoPlayStore(packageName: String) {
 }
 fun Context.toast(text: String) {
     Toast.makeText(this, text, Toast.LENGTH_SHORT).show()
+}
+fun Fragment.addAdmob(adView: AdView) {
+    MobileAds.initialize(this.requireContext())
+    val adRequest = AdRequest.Builder().build()
+    adView.loadAd(adRequest)
 }

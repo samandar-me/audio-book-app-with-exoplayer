@@ -2,6 +2,7 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
     android:background="@color/purple_middle"
     android:layout_height="match_parent">
 
@@ -24,8 +25,8 @@
 
     <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/imageView"
-        android:layout_width="260dp"
-        android:layout_height="260dp"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
         android:layout_marginBottom="16dp"
         app:layout_constraintBottom_toTopOf="@+id/guideline2"
         app:layout_constraintEnd_toEndOf="parent"
@@ -73,8 +74,8 @@
 
     <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/ivPlayPauseDetail"
-        android:layout_width="75dp"
-        android:layout_height="75dp"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
         android:layout_marginTop="32dp"
         android:background="@drawable/circle_drawable"
         app:layout_constraintEnd_toEndOf="parent"
@@ -102,6 +103,20 @@
         app:layout_constraintStart_toEndOf="@+id/ivPlayPauseDetail"
         app:layout_constraintTop_toTopOf="@+id/ivPlayPauseDetail" />
 
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/admob"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        ads:adUnitId="ca-app-pub-2942733085232967/4219065893"
+        ads:adSize="BANNER"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivPlayPauseDetail"
+        app:layout_constraintVertical_bias="0.977" />
+
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline2"
         android:layout_width="wrap_content"
@@ -114,6 +129,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.7" />
+        app:layout_constraintGuide_end="255dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

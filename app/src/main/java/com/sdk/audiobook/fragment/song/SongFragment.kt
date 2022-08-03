@@ -23,6 +23,7 @@ import com.sdk.audiobook.databinding.FragmentSongBinding
 import com.sdk.audiobook.exoplayer.isPlaying
 import com.sdk.audiobook.exoplayer.toSong
 import com.sdk.audiobook.util.Status.SUCCESS
+import com.sdk.audiobook.util.addAdmob
 import dagger.hilt.android.AndroidEntryPoint
 import java.text.SimpleDateFormat
 import java.util.*
@@ -92,6 +93,7 @@ class SongFragment : Fragment() {
         binding.ivSkip.setOnClickListener {
             mainViewModel.skipToNextSong()
         }
+        addAdmob(binding.admob)
     }
 
     private fun updateTitleAndSongImage(song: Story) {

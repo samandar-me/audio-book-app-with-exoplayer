@@ -1,20 +1,13 @@
 package com.sdk.audiobook.exoplayer
 
-import android.app.NotificationManager
 import android.app.PendingIntent
-import android.content.Context
 import android.content.Intent
-import android.os.Build
 import android.os.Bundle
 import android.support.v4.media.MediaBrowserCompat
 import android.support.v4.media.MediaDescriptionCompat
 import android.support.v4.media.MediaMetadataCompat
 import android.support.v4.media.session.MediaSessionCompat
-import android.util.Log
-import android.widget.Toast
-import androidx.annotation.RequiresApi
 import androidx.media.MediaBrowserServiceCompat
-import com.google.android.exoplayer2.PlaybackParameters
 import com.google.android.exoplayer2.Player
 import com.google.android.exoplayer2.SimpleExoPlayer
 import com.google.android.exoplayer2.ext.mediasession.MediaSessionConnector
@@ -23,7 +16,6 @@ import com.google.android.exoplayer2.upstream.DefaultDataSourceFactory
 import com.sdk.audiobook.exoplayer.callbacks.MusicPlaybackPreparer
 import com.sdk.audiobook.exoplayer.callbacks.MusicPlayerEventListener
 import com.sdk.audiobook.exoplayer.callbacks.MusicPlayerNotificationListener
-import com.sdk.audiobook.util.Constants
 import com.sdk.audiobook.util.Constants.MEDIA_ROOT_ID
 import com.sdk.audiobook.util.Constants.NETWORK_ERROR
 import dagger.hilt.android.AndroidEntryPoint

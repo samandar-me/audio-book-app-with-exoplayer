@@ -93,7 +93,7 @@ class SongFragment : Fragment() {
         binding.ivSkip.setOnClickListener {
             mainViewModel.skipToNextSong()
         }
-        addAdmob(binding.admob)
+        requireActivity().addAdmob(binding.admob)
     }
 
     private fun updateTitleAndSongImage(song: Story) {

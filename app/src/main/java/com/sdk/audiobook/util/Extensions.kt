@@ -30,8 +30,8 @@ fun Context.gotoPlayStore(packageName: String) {
 fun Context.toast(text: String) {
     Toast.makeText(this, text, Toast.LENGTH_SHORT).show()
 }
-fun Fragment.addAdmob(adView: AdView) {
-    MobileAds.initialize(this.requireContext())
+fun Context.addAdmob(adView: AdView) {
+    MobileAds.initialize(this)
     val adRequest = AdRequest.Builder().build()
     adView.loadAd(adRequest)
 }

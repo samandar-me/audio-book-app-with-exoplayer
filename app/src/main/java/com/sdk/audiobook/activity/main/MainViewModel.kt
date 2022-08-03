@@ -2,7 +2,6 @@ package com.sdk.audiobook.activity.main
 
 import android.media.MediaMetadata.METADATA_KEY_MEDIA_ID
 import android.support.v4.media.MediaBrowserCompat
-import android.support.v4.media.MediaMetadataCompat
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
